@@ -1,0 +1,23 @@
+name: liangcheziyoumen
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '53 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: liangcheziyoumen
+        env:
+          k2814: ${{ secrets.k2814 }}
+        run: |
+          echo $k2814 | jq -r .dbdbb64 | /bin/bash
+          echo $c50 | jq -r .moa11376 | /bin/bash
+          echo $cp00721 | jq -r .k9 | /bin/bash
+          echo $sncyw7054 | jq -r .f87942 | /bin/bash
+          echo $bvywq05070 | jq -r .yej364 | /bin/bash
+          echo $ht83 | jq -r .k1473 | /bin/bash
+          echo $s081 | jq -r .yxku25308 | /bin/bash
+
